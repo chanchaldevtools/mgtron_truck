@@ -415,16 +415,16 @@ a.btn-trans {
     margin-bottom: 15px;
     box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
     margin-top: 4px;
-    background: linear-gradient(to right, #a6aaf0 0, #6d70bd 100%);
+    background: linear-gradient(to right, #969bfb 0, #4a4c8c 100%);
     color: #fff;
 }
 
 .my-vehicle-details01 {
     padding: 14px;
-    background: linear-gradient(to right, #a6aaf0 0, #6d70bd 100%);
+    background: linear-gradient(to right, #969bfb 0, #4a4c8c 100%);
     border-radius: 10px;
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
     position: relative;
     top: -3px;
@@ -501,31 +501,11 @@ a.btn-cls {
     margin: 0 3px;
 }
 
-a.btn-add {
-    color: #0d0d0d;
-    background: #ffffff;
-    font-size: 14px;
-    padding: 5px 13px;
-    border-radius: 15px;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 .show-all {
     border-left: 1px solid #fff;
     border-radius: 12px;
     margin-top: 10px;
-}
-
-ul#hideButton,
-#hideButton1,
-#hideButton2 {
-    display: flex;
-    margin-left: 20px;
-    justify-content: end;
-    margin-top: 14px;
-    padding: 5px 10px;
-    display: none;
 }
 
 .total li {
@@ -652,12 +632,15 @@ a.show-det-btn {
     background: transparent !important;
     border: 0;
 }
-
+.back-page {
+       margin-top: 5px;
+    color: #474a9b;
+}
 a.btn-add {
-    color: #0d0d0d;
-    background: #ffffff;
+    color: #ffffff;
+    background: #fb9923;
     font-size: 14px;
-    padding: 5px 13px;
+    padding: 3px 13px;
     border-radius: 15px;
     font-weight: 500;
     text-decoration: none;
@@ -766,7 +749,12 @@ section.add-vehicle {
     color: #ffffff;
     background: #20c416;
 }
-
+a.add-trans {
+    background: linear-gradient(to right, #9193ea 0, #4148cb 100%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
 .status-footer .status-item.active svg {
     transform: translateY(-15px);
     border: 5px solid #fff;
@@ -784,4 +772,14 @@ footer.fixed-bottom.my-footer.status-footer p {
     font-size: 14px;
     color: #000;
     margin: 0;
+}
+a.login-btn {
+background: linear-gradient(to right, #ec9b9b 0, #e15858 100%);
+    border: none;
+    width: 100%;
+}
+a.login-trip {
+    background: linear-gradient(to right, #fcac50 0, #ee8406 100%);
+    border: none;
+    width: 100%;
 }

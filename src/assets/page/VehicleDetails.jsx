@@ -32,9 +32,9 @@ function VehicleDetailsPage() {
   return (
     <>
       <section className="top-sec1">
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="d-flex align-items-center justify-content-between mb-4">
           <h2><FontAwesomeIcon icon={faCar} /> WB541747</h2>
-          <Link to="/add-transport"><FontAwesomeIcon icon={faPlus} /> Add Transport</Link>
+          <Link to="/add-transport" className="add-trans"><FontAwesomeIcon icon={faPlus} /> Add Transport</Link>
         </div>
         {details.map((veh, idx) => (
           <div key={veh.id} className="trip-vehicle">

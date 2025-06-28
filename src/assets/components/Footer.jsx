@@ -6,7 +6,7 @@ import {
   faHouse,
   faGear,
   faTruckMonster,
-  faArrowLeft,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -21,7 +21,7 @@ function Footer() {
         <Row className="text-center py-1">
           <Col>
             <div className="back-page" onClick={() => navigate(-1)}>
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FontAwesomeIcon icon={faChevronLeft} />
             </div>
           </Col>
           <Col>

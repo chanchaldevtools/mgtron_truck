@@ -6,7 +6,7 @@ import {
   faCircleCheck,
   faSpinner,
   faThumbsUp,
-  faArrowLeft
+  faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 function StatusFooter({ status = "pending" }) {
@@ -20,7 +20,7 @@ function StatusFooter({ status = "pending" }) {
         <Row className="text-center align-items-center">
           <Col>
             <div className="back-page" onClick={() => navigate(-1)}>
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FontAwesomeIcon icon={faChevronLeft} />
             </div>
           </Col>
           <Col>
