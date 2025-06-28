@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-size: 100% 200%;
+    color: #000000;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(94deg, rgb(196 52 56 / 15%) 0%, rgb(250 238 239) 30%, rgb(152 159 208 / 30%) 81%, rgb(56 59 143 / 28%) 100%);
+}
+
+ol,
+ul {
+    padding: 0 !important;
+}
+
+p {
+    color: #5e5b5b;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+hr {
+    margin: 5px 0 !important;
+}
+
+button:focus {
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+select:focus {
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button.dropdown-toggle {
+    border: none;
+    background: transparent;
+}
+
+.dropstart .dropdown-toggle::before {
+    display: none;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    position: relative;
+    background: url(/src/assets/Images/d3.png);
+}
+
+.login-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.login-header h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form {
+    background-color: #ffffffc9;
+    padding: 35px 10px 47px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 12%);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-form .form-control {
+    height: 48px;
+    box-shadow: rgb(204 219 232 / 31%) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.input-field {
+    border: none;
+    border-bottom: 1.5px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.input-field:focus {
+    border-bottom: 2px solid #ff6e6e;
+    outline: none;
+    box-shadow: none;
+}
+
+/* .btn:hover {
+    color: #ffffff;
+    background-color: #ff706e !important;
+    border-color: #ff706e !important;
+} */
+
+
+img.img-logo {
+    width: 147px;
+    margin-bottom: 18px;
+}
+
+button.login-btn {
+    background: #474a9b;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+}
+
+.otp-input {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.25rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: rgb(204 219 232 / 31%) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+/* footer */
+
+footer.my-footer {
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 3px 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+footer.my-footer a {
+    font-size: 20px;
+    color: #474a9b;
+}
+
+a.active {
+    background: #e15858;
+    padding: 8px;
+    border: 4px solid #fff;
+    color: #ffffff !important;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: -10px;
+    border-radius: 35%;
+}
+
+.vehicle {
+    padding: 15px;
+    background: linear-gradient(to right, #a6aaf0 0, #6d70bd 100%);
+    border-radius: 10px;
+    color: #000000;
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
+    border: 2px solid #fff;
+}
+
+.vehicle-img {
+    background: #fff;
+    border-radius: 8px;
+    margin-left: -34px;
+    box-shadow: rgb(0 0 0 / 11%) 0px 15px 25px, rgb(0 0 0 / 0%) 0px 5px 10px;
+    padding: 12px;
+    border-left: 3px solid #9ba2fc;
+}
+
+.vehicle-det {
+    margin-left: -10px;
+    position: relative;
+}
+
+.left-vech {
+    margin-left: -10px;
+}
+
+button.btn.btn-view {
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+.right-sec {
+    position: absolute;
+    top: -35px;
+    right: -14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 2px 5px;
+    border-radius: 7px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 15px 25px, rgb(0 0 0 / 6%) 0px 5px 10px;
+}
+
+a.btn.btn-view {
+    background: #6370f8;
+    padding: 2px 10px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+a.btn.btn-edit {
+    background: transparent;
+    padding: 0;
+    color: #57bf04;
+    font-size: 18px;
+}
+
+section.top-sec1 h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #303030;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top-sec1 svg.svg-inline--fa.fa-car {
+    background: #e15858;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 25px, rgb(0 0 0 / 9%) 0px 5px 10px;
+    border: 2px solid #ffffff;
+}
+
+section.top-sec1 {
+    margin: 12px 6px 70px;
+}
+
+.top-sec {
+    margin: 35px 6px 70px;
+}
+
+.vehicle-det p {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.vehicle-det span {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+a.btn.btn-trash {
+    border: 0;
+    color: #e15858;
+    font-size: 18px;
+    background: transparent;
+    padding: 0;
+}
+
+
+/* trans  */
+
+.tans-heading {
+    position: relative;
+    display: block;
+}
+
+.source i {
+    background: #6e75f9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.source span {
+    position: relative;
+    top: -2px;
+}
+
+.source {
+    padding: 4px;
+    border-radius: 5px !important;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    background: #ebebfb;
+    color: #353535;
+    margin-bottom: 7px;
+}
+
+.trans {
+    padding: 14px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #a6aaf0 0, #6d70bd 100%);
+    border: 2px solid #ffffff;
+    color: #fff;
+}
+
+.trans h3 {
+    font-size: 17px;
+    color: #ffef15;
+    font-weight: 600;
+    margin: 0;
+}
+
+a.btn-trans {
+    color: #0d0d0d;
+    background: #ffffff;
+    font-size: 14px;
+    padding: 4px 13px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.source i {
+    background: #6e75f9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.mode {
+    position: relative;
+}
+
+.trans p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.source svg {
+    background: #606afb;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.trans h4 {
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.status-badge {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    padding: 2px 9px;
+    font-weight: 500;
+    border-radius: 30px;
+    white-space: nowrap;
+    color: #fff;
+        border: 2px solid #fff;
+}
+
+.status-badge.pending {
+    background-color: #f35f24;
+}
+
+.status-badge.approved {
+    background-color: #fbb500;
+    color: #ffffff;
+}
+
+.status-badge.success {
+    background-color: #20c416;
+}
+
+
+
+/* vehicle details  */
+.trip-vehicle {
+    background: #fff;
+    margin: 17px 0;
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #b8b8b8;
+    position: relative;
+}
+
+.add-vehicle01 p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.my-vehicle-details {
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
+    margin-top: 4px;
+    background: linear-gradient(to right, #a6aaf0 0, #6d70bd 100%);
+    color: #fff;
+}
+
+.my-vehicle-details01 {
+    padding: 14px;
+    background: linear-gradient(to right, #a6aaf0 0, #6d70bd 100%);
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
+    position: relative;
+    top: -3px;
+}
+
+.my-vehicle-details ul,
+.my-vehicle-details01 ul {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    margin-bottom: 4px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.my-vehicle-details01 ul li:nth-child(odd) {
+    font-weight: 600;
+}
+
+.my-vehicle-details ul li:nth-child(odd) {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.my-vehicle-details-icon svg {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: rgb(0 0 0 / 11%) 0px 15px 25px, rgb(0 0 0 / 0%) 0px 5px 10px;
+    padding: 9px;
+    border-left: 1px solid #5864fa;
+}
+
+.my-vehicle-details-icon {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.driverAllDetails ul {
+    margin-left: 10px;
+}
+
+span.my-btn.show {
+    color: #ffffff;
+    background: #fb7780;
+    font-size: 14px;
+    padding: 4px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-trip {
+    color: #ffffff;
+    background: linear-gradient(to right, #8a8bfc 0, #4051f9 100%);
+    ;
+    font-size: 14px;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+a.btn-cls {
+    color: #ffffff;
+    background: linear-gradient(to right, #fb696d 0, #fb2f2f 100%);
+    font-size: 14px;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+a.btn-add {
+    color: #0d0d0d;
+    background: #ffffff;
+    font-size: 14px;
+    padding: 5px 13px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.show-all {
+    border-left: 1px solid #fff;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+ul#hideButton,
+#hideButton1,
+#hideButton2 {
+    display: flex;
+    margin-left: 20px;
+    justify-content: end;
+    margin-top: 14px;
+    padding: 5px 10px;
+    display: none;
+}
+
+.total li {
+    font-size: 18px;
+    border-top: 1px solid #d6d2d7;
+    font-weight: 500;
+    color: #ffd700;
+}
+
+.add-vehicle01 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.add-vehicle01 h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #404040;
+    text-align: center;
+}
+
+.sub-drive-details {
+    margin: 28px 0;
+    border-left: 1px solid #605f5e;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.transport-det p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.transport-det {
+    padding: 2px 4px;
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.add-vehicle01 span {
+    font-weight: 500;
+}
+
+.my-vehicle-details .svg {
+    color: #ffffff;
+    /* background: #7983ea; */
+    padding: 4px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.sub-drive-details.driverDetails2 {
+    display: grid !important;
+}
+
+.add-vehicle01 h4 svg {
+    background: #6e75f9;
+    color: #fff !important;
+    padding: 7px;
+    border-radius: 50px;
+}
+
+
+/* modal  */
+.modal-dialog.modal-bottom {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    transition: transform 0.3s ease-out;
+    transform: translateY(100%);
+}
+
+.modal.fade.bottom-up-modal.show .modal-dialog.modal-bottom {
+    transform: translateY(0);
+}
+
+
+.numbering {
+    position: absolute;
+    right: 8px;
+    top: -14px;
+    background: #e15858;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 25px, rgb(0 0 0 / 9%) 0px 5px 10px;
+    border: 2px solid #ffffff;
+}
+
+.numbering span {
+    font-size: 16px;
+    line-height: 42px;
+    color: #fff;
+    font-weight: 500;
+}
+
+a.show-det-btn {
+    color: #ffffff;
+    background: linear-gradient(to right, #9193ea 0, #4148cb 100%);
+    font-size: 14px;
+    padding: 7px 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 2px;
+    box-shadow: rgb(50 50 93 / 15%) 0px 2px 5px -1px, rgb(0 0 0 / 22%) 0px 1px 3px -1px;
+    border: 0;
+}
+
+.right-sec a.btn.btn-edit:hover,
+.right-sec a.btn.btn-trash:hover {
+    background: transparent !important;
+    border: 0;
+}
+
+a.btn-add {
+    color: #0d0d0d;
+    background: #ffffff;
+    font-size: 14px;
+    padding: 5px 13px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+span.trip-id {
+    background: #d2d3fb;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+a.vehicle-delete svg {
+    color: #fff;
+    background: #ff5a5a;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+a.vehicle-edit {
+    color: #ffffff;
+}
+a.pending {
+    color: #ffd721;
+}
+.transport-det-show {
+    border: 1px solid #bebdbd;
+    border-radius: 10px;
+    background: #f0f1f9;
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.transport-icon svg {
+    background: linear-gradient(to right, #fcb15a 0, #fa8b05 100%);
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid #f88a05;
+    color: #fff;
+    font-size: 20px;
+}
+/* svg.svg-inline--fa.fa-pen-to-square {
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 4px;
+    margin-left: 10px;
+} */
+
+
+/* add-vehicle  */
+
+section.add-vehicle {
+    padding: 20px 5px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 25px, rgb(0 0 0 / 9%) 0px 5px 10px;
+    margin-bottom: 20px;
+}
+
+.add-vehicle .form-control {
+    height: 40px;
+    box-shadow: rgb(204 219 232 / 31%) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 6px;
+}
+
+.add-vehicle h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f88a05;
+    text-align: center;
+}
+
+.add-vehicle p {
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+
+/* footer-status  */
+
+.status-footer .status-item svg {
+    font-size: 20px !important;
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.status-footer .status-item p {
+    margin: 0;
+    font-size: 12px;
+}
+.status-footer .pending svg {
+    color: #ffffff;
+    background: #f35f24;
+}
+.status-footer .approved svg {
+    color: #ffffff;
+    background: #fbb500;
+}
+.status-footer .success svg {
+    color: #ffffff;
+    background: #20c416;
+}
+
+.status-footer .status-item.active svg {
+    transform: translateY(-15px);
+    border: 5px solid #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px,
+                rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.status-footer .status-item.active p {
+    transform: translateY(-15px);
+}
+footer.status-footer {
+    padding: 0;
+}
+
+footer.fixed-bottom.my-footer.status-footer p {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+}
